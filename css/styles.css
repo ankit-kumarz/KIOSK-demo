@@ -1,0 +1,38 @@
+:root{
+  --blue:#1e88e5;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --surface:#f5f7fa;
+}
+*{box-sizing:border-box;font-family:Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:var(--surface);color:#222}
+.topbar{background:linear-gradient(180deg,var(--blue),#1976d2);color:#fff;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.topbar-left{font-size:20px;font-weight:600}
+.topbar-right{font-size:13px}
+.topbar .end{background:#e53935;border:none;color:#fff;padding:6px 10px;border-radius:4px;margin-left:12px}
+.wrap{max-width:1300px;margin:18px auto;padding:0 18px}
+.card{background:var(--card);border-radius:4px;padding:14px;border:1px solid rgba(0,0,0,0.06)}
+.mandatory{font-size:12px;color:var(--muted);margin-bottom:8px}
+.mandatory .star{color:#c0392b}
+.grid.cols-3{display:flex;gap:22px}
+.col{flex:1;min-width:0}
+.form-group{display:flex;flex-direction:column;margin-bottom:12px}
+.form-row{display:flex;gap:12px;margin-bottom:12px}
+.form-group.small{flex:0 0 auto}
+
+/* National ID sizing to match kiosk screenshot */
+.national-select{width:110px;min-width:90px;padding:9px 8px;height:38px;border-radius:3px;border:1px solid #d7dbe0;background:#f7f8fa}
+.national-no{width:260px;min-width:160px;padding:9px 10px;height:38px;border-radius:3px;border:1px solid #d7dbe0;background:#fff}
+.form-group input, .form-group select{height:38px}
+.form-group label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.form-group input,.form-group select{padding:9px 10px;border:1px solid #e6e9ee;border-radius:3px;font-size:14px;background:rgba(240,243,247,0.9)}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:12px;margin-top:6px;border-top:1px solid #eee}
+.agree{font-size:14px;color:#333}
+.actions{display:flex;gap:10px}
+.btn{padding:8px 12px;border-radius:4px;border:1px solid transparent;cursor:pointer}
+.btn.green{background:#2e7d32;color:#fff}
+.btn.blue{background:var(--blue);color:#fff}
+.modal{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.45);display:none;align-items:center;justify-content:center}
+.modal-content{background:#fff;padding:18px;border-radius:6px;max-width:700px;width:90%}
+@media (max-width:1100px){.grid.cols-3{flex-direction:column}}
+
